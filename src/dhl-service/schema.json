@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "DhlServiceSchematics",
+  "title": "DhlServiceSchematics",
+  "type": "object",
+  "description": "Creates service in dhl way",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Service name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "methods": {
+      "type": "string",
+      "description": "Array of service methods",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      }
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

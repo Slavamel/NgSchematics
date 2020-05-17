@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "dhl-service": {
+      "description": "A blank schematic.",
+      "factory": "./dhl-service/index#dhlService",
+      "schema": "./dhl-service/schema.json"
+    }
+  }
+}
